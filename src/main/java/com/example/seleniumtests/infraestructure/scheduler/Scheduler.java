@@ -20,7 +20,7 @@ public class Scheduler {
 
     @Scheduled(fixedDelay = 1000*15)
     public void scrapingEncuentros(){
-        log.log(Level.SEVERE, "Scheduled service: " + LocalDateTime.now());
+        log.log(Level.INFO, "Scheduled service: " + LocalDateTime.now());
         scrapingEncuentrosServiceImpl.startScrapingProcess();
     }
 
