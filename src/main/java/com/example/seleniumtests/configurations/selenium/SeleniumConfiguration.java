@@ -13,10 +13,12 @@ public class SeleniumConfiguration {
 
 
 
-//    @PostConstruct
-//    public void postConstruct(){
-//        System.setProperty("webdriver.chrome.driver","/app/.chromedriver/bin/chromedriver");
-//    }
+    @PostConstruct
+    public void postConstruct(){
+        System.setProperty("webdriver.chrome.driver","/app/.chromedriver/bin/chromedriver");
+//        System.setProperty("webdriver.chrome.driver","./src/main/resources/chromedriver.exe");
+
+    }
 
     @Bean
     public ChromeDriver driver(){
